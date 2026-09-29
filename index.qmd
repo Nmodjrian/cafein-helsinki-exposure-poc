@@ -29,6 +29,12 @@ Candidate walking routes are reconstructed using OpenStreetMap. PM₂.₅ concen
 
 [View the route exposure analysis](notebooks/03_candidate_walking_route_pm25_exposure.ipynb)
 
+### 4. Cycling exposure to Aalto University / Otaniemi
+
+Candidate bicycle routes are calculated from neighbourhoods across the Helsinki metropolitan area to Aalto University in Otaniemi. PM₂.₅ is sampled along each modeled route and combined with estimated cycling time to compare route-level exposure.
+
+[View the cycling exposure analysis](notebooks/04_cycling_exposure_to_otaniemi.ipynb)
+
 ## Conceptual progression
 
 **Residential environment**
