@@ -22,7 +22,7 @@ website:
         text: Mobility Exposure
       - href: notebooks/03_candidate_walking_route_pm25_exposure.ipynb
         text: Route Exposure
-      - href: notebooks/04_cycling_exposure_to_otaniemi.ipyn
+      - href: notebooks/04_cycling_exposure_to_otaniemi.ipynb
         text: Cycling to Otaniemi 
 
     right:
