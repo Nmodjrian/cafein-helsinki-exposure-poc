@@ -1,0 +1,67 @@
+---
+title: "Mobility-based PM₂.₅ Exposure in Helsinki"
+subtitle: "A CAFEIN-based proof of concept"
+---
+
+## Overview
+
+This project develops a proof-of-concept workflow for assessing how human mobility can modify environmental exposure estimates in the Helsinki metropolitan area.
+
+The analysis progresses from conventional residential exposure toward mobility-based exposure.
+
+## Analytical framework
+
+### 1. Residential exposure
+
+PM₂.₅ concentrations are assigned to populated grid cells to characterize environmental conditions at residential locations.
+
+[View the residential exposure analysis](notebooks/01_residential_pm25_exposure.ipynb)
+
+### 2. Mobility-weighted destination exposure
+
+Origin-destination mobility flows are combined with neighbourhood-level PM₂.₅ concentrations to examine whether mobility takes residents toward relatively cleaner or more polluted environments.
+
+[View the mobility exposure analysis](notebooks/02_mobility_weighted_destination_exposure.ipynb)
+
+### 3. Route-based exposure
+
+Candidate walking routes are reconstructed using OpenStreetMap. PM₂.₅ concentrations are sampled along each route and combined with estimated travel time to construct a concentration-time exposure indicator.
+
+[View the route exposure analysis](notebooks/03_candidate_walking_route_pm25_exposure.ipynb)
+
+## Conceptual progression
+
+**Residential environment**
+
+↓
+
+**Mobility destinations**
+
+↓
+
+**Travel routes**
+
+↓
+
+**Mobility-related environmental exposure**
+
+## Why this matters
+
+Residential exposure alone assumes that people remain near their home location. In reality, everyday mobility may increase or decrease the environmental conditions people encounter.
+
+This proof of concept provides a framework for extending exposure assessment from static residential locations toward activity spaces and travel environments.
+
+## Next phase
+
+The framework will next be extended using temporally resolved mobility data to investigate behavioural responses during high-exposure periods such as:
+
+- wildfire smoke events;
+- elevated PM₂.₅ episodes;
+- extreme heat;
+- compound heat and air-quality events.
+
+The longer-term objective is to examine whether the ability to reduce, reschedule, or redirect mobility during hazardous environmental conditions differs across neighbourhoods and population groups.
+
+## Repository
+
+Source code and notebooks are available on [GitHub](https://github.com/Nmodjrian/cafein-helsinki-exposure-poc).

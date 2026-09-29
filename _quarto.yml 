@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Helsinki Mobility & PM₂.₅ Exposure"
+  site-url: "https://nmodjrian.github.io/cafein-helsinki-exposure-poc/"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: notebooks/01_residential_pm25_exposure.ipynb
+        text: Residential Exposure
+      - href: notebooks/02_mobility_weighted_destination_exposure.ipynb
+        text: Mobility Exposure
+      - href: notebooks/03_candidate_walking_route_pm25_exposure.ipynb
+        text: Route Exposure
+
+    right:
+      - icon: github
+        href: https://github.com/Nmodjrian/cafein-helsinki-exposure-poc
+
+format:
+  html:
+    toc: true
+    code-fold: true
+    code-tools: true
+    theme: cosmo
