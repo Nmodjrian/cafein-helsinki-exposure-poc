@@ -1,0 +1,9 @@
+cafein.sampledata
+pandas
+numpy
+geopandas
+rasterio
+matplotlib
+pyarrow
+osmnx
+shapely
