@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - notebooks/01_residential_pm25_exposure.ipynb
+    - notebooks/02_mobility_weighted_destination_exposure.ipynb
+    - notebooks/03_candidate_walking_route_pm25_exposure.ipynb
 
 website:
   title: "Helsinki Mobility & PM₂.₅ Exposure"
@@ -23,7 +28,7 @@ website:
 
 format:
   html:
+    theme: cosmo
     toc: true
     code-fold: true
     code-tools: true
-    theme: cosmo

@@ -24,11 +24,23 @@ jobs:
 
       - name: Render website
         run: |
-          quarto render .
+          echo "Exact filenames:"
+          ls -lb
+
+          echo "Quarto version:"
+          quarto --version
+
+          echo "Quarto project files:"
+          cat _quarto.yml
+
+          echo "Now rendering:"
+          quarto render
+
           echo "Files after render:"
           ls -la
-          echo "Contents of _site:"
-          ls -la _site
+
+          echo "Site output:"
+          find _site -maxdepth 2 -type f | head -50
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
