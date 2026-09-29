@@ -23,7 +23,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render website
-        run: quarto render
+        run: |
+          quarto render .
+          echo "Files after render:"
+          ls -la
+          echo "Contents of _site:"
+          ls -la _site
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
