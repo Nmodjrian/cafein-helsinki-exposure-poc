@@ -1,41 +1,41 @@
 ---
 title: "Mobility-based PM₂.₅ Exposure in Helsinki"
-subtitle: "A CAFEIN-based proof of concept"
+subtitle: "From static exposure to behavioural and accessibility analysis"
 ---
 
 ## Overview
 
-This project develops a proof-of-concept workflow for assessing how human mobility can modify environmental exposure estimates in the Helsinki metropolitan area.
+This project develops a proof-of-concept framework for examining how human mobility can modify environmental exposure estimates in the Helsinki metropolitan area.
 
-The analysis progresses from conventional residential exposure toward mobility-based exposure.
+The work has evolved from a first CAFEIN-based exposure workflow toward temporally resolved mobility, behavioural-response, neighbourhood, accessibility, and environmental-relief analyses.
 
-## Analytical framework
+## Current analysis
 
-### 1. Residential exposure
+The current workflow progresses through:
 
-PM₂.₅ concentrations are assigned to populated grid cells to characterize environmental conditions at residential locations.
+1. **Residential exposure** — PM₂.₅ at residential locations.
+2. **Mobility-weighted destination exposure** — whether mobility shifts activity toward cleaner or more polluted destinations.
+3. **Route exposure** — environmental conditions along candidate walking and cycling routes.
+4. **Locomizer × PM₂.₅ analysis** — temporally resolved mobile-device activity compared with air-quality observations.
+5. **H3 behavioural response** — spatial variation in activity during changing PM₂.₅ conditions.
+6. **Neighbourhood integration** — translation of H3-level mobility patterns to neighbourhood context.
+7. **Accessibility** — whether persistent activity locations have access to alternative destinations and networks.
+8. **Environmental relief access** — potential access to greener or lower-exposure environments.
+9. **Route-level environmental exposure** — extension toward mobility-conditioned environmental burden.
 
-[View the residential exposure analysis](notebooks/01_residential_pm25_exposure.ipynb)
+Use the **Current analysis** section in the sidebar for the latest workflow.
 
-### 2. Mobility-weighted destination exposure
+## Analysis development
 
-Origin-destination mobility flows are combined with neighbourhood-level PM₂.₅ concentrations to examine whether mobility takes residents toward relatively cleaner or more polluted environments.
+Earlier and sensitivity analyses are retained on the site to make methodological changes transparent.
 
-[View the mobility exposure analysis](notebooks/02_mobility_weighted_destination_exposure.ipynb)
+The **Development & sensitivity** section includes alternative H3 resolutions, earlier behavioural-response formulations, and previous temporal comparison approaches.
 
-### 3. Route-based exposure
+## Version 1 — initial proof of concept
 
-Candidate walking routes are reconstructed using OpenStreetMap. PM₂.₅ concentrations are sampled along each route and combined with estimated travel time to construct a concentration-time exposure indicator.
+The original four CAFEIN notebooks remain available under **Version 1 — initial proof of concept**.
 
-[View the route exposure analysis](notebooks/03_candidate_walking_route_pm25_exposure.ipynb)
-
-### 4. Cycling exposure to Aalto University / Otaniemi
-
-Candidate bicycle routes are calculated from neighbourhoods across the Helsinki metropolitan area to Aalto University in Otaniemi. PM₂.₅ is sampled along each modeled route and combined with estimated cycling time to compare route-level exposure.
-
-[View the cycling exposure analysis](notebooks/04_cycling_exposure_to_otaniemi.ipynb)
-
-## Conceptual progression
+They document the progression from:
 
 **Residential environment**
 
@@ -51,23 +51,12 @@ Candidate bicycle routes are calculated from neighbourhoods across the Helsinki 
 
 **Mobility-related environmental exposure**
 
-## Why this matters
+The underlying v1 notebook files are also archived in `notebooks/v1/` in the repository.
 
-Residential exposure alone assumes that people remain near their home location. In reality, everyday mobility may increase or decrease the environmental conditions people encounter.
+## Interpretation
 
-This proof of concept provides a framework for extending exposure assessment from static residential locations toward activity spaces and travel environments.
-
-## Next phase
-
-The framework will next be extended using temporally resolved mobility data to investigate behavioural responses during high-exposure periods such as:
-
-- wildfire smoke events;
-- elevated PM₂.₅ episodes;
-- extreme heat;
-- compound heat and air-quality events.
-
-The longer-term objective is to examine whether the ability to reduce, reschedule, or redirect mobility during hazardous environmental conditions differs across neighbourhoods and population groups.
+This project is a methodological proof of concept. Different stages use different forms of environmental and mobility information, and results should not automatically be interpreted as personal inhaled dose, observed travel routes, or causal behavioural responses unless explicitly supported by the corresponding analysis.
 
 ## Repository
 
-Source code and notebooks are available on [GitHub](https://github.com/Nmodjrian/cafein-helsinki-exposure-poc).
+[View the source code and notebooks on GitHub](https://github.com/Nmodjrian/cafein-helsinki-exposure-poc)

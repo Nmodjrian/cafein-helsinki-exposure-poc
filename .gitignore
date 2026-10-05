@@ -8,3 +8,15 @@ venv/
 # Jupyter temporary files
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
+
+# Large/local network cache
+notebooks/helsinki-region-streets.cafein
+
+# Temporary output checkpoints
+outputs/**/.ipynb_checkpoints/
+
+# Generated analysis outputs
+outputs/
+
+# Local Quarto backup
+_quarto.yml.backup

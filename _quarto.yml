@@ -3,6 +3,32 @@ project:
   output-dir: _site
   render:
     - index.qmd
+
+    # Current analysis
+    - notebooks/01_residential_pm25_exposure_v2.ipynb
+    - notebooks/02_mobility_weighted_destination_exposure_v2.ipynb
+    - notebooks/03_candidate_walking_route_pm25_exposure_v2.ipynb
+    - notebooks/04_cycling_exposure_to_otaniemi_v2.ipynb
+    - notebooks/05_locomizer_two_time_pm25_change_v3_station_observations.ipynb
+    - notebooks/06_h3_behavioural_response_to_pm25_v7_ff_indicators.ipynb
+    - notebooks/06_neighbourhood_locomizer_cafein_integration.ipynb
+    - notebooks/07_cafein_accessibility_context_poc.ipynb
+    - notebooks/08_environmental_relief_access_poc.ipynb
+    - notebooks/09_route_level_environmental_exposure_poc.ipynb
+
+    # Data preparation
+    - notebooks/00_fetch_enfuser_pm25_two_times.ipynb
+    - notebooks/00_stage_fmi_station_pm25_prepare.ipynb
+
+    # Development / sensitivity analyses
+    - notebooks/05_locomizer_two_time_pm25_change_v2.ipynb
+    - notebooks/06_h3_behavioural_response_to_pm25.ipynb
+    - notebooks/06_h3_behavioural_response_to_pm25_h3res9.ipynb
+    - notebooks/06_h3_behavioural_response_to_pm25__h3res10.ipynb
+    - notebooks/06_h3_behavioural_response_to_pm25_v3_hexmaps_fixed.ipynb
+    - notebooks/README_v2_comparison.md
+
+    # Original v1 pages — preserve existing URLs
     - notebooks/01_residential_pm25_exposure.ipynb
     - notebooks/02_mobility_weighted_destination_exposure.ipynb
     - notebooks/03_candidate_walking_route_pm25_exposure.ipynb
@@ -16,18 +42,71 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: notebooks/01_residential_pm25_exposure.ipynb
-        text: Residential Exposure
-      - href: notebooks/02_mobility_weighted_destination_exposure.ipynb
-        text: Mobility Exposure
-      - href: notebooks/03_candidate_walking_route_pm25_exposure.ipynb
-        text: Route Exposure
-      - href: notebooks/04_cycling_exposure_to_otaniemi.ipynb
-        text: Cycling to Otaniemi 
 
     right:
       - icon: github
         href: https://github.com/Nmodjrian/cafein-helsinki-exposure-poc
+
+  sidebar:
+    style: docked
+    search: true
+    contents:
+
+      - section: "Current analysis"
+        contents:
+          - href: notebooks/01_residential_pm25_exposure_v2.ipynb
+            text: "01 Residential exposure"
+          - href: notebooks/02_mobility_weighted_destination_exposure_v2.ipynb
+            text: "02 Mobility-weighted exposure"
+          - href: notebooks/03_candidate_walking_route_pm25_exposure_v2.ipynb
+            text: "03 Walking-route exposure"
+          - href: notebooks/04_cycling_exposure_to_otaniemi_v2.ipynb
+            text: "04 Cycling to Otaniemi"
+          - href: notebooks/05_locomizer_two_time_pm25_change_v3_station_observations.ipynb
+            text: "05 Locomizer × station PM₂.₅"
+          - href: notebooks/06_h3_behavioural_response_to_pm25_v7_ff_indicators.ipynb
+            text: "06 H3 behavioural response"
+          - href: notebooks/06_neighbourhood_locomizer_cafein_integration.ipynb
+            text: "06 Neighbourhood integration"
+          - href: notebooks/07_cafein_accessibility_context_poc.ipynb
+            text: "07 Accessibility context"
+          - href: notebooks/08_environmental_relief_access_poc.ipynb
+            text: "08 Environmental relief access"
+          - href: notebooks/09_route_level_environmental_exposure_poc.ipynb
+            text: "09 Route-level exposure"
+
+      - section: "Data preparation"
+        contents:
+          - href: notebooks/00_fetch_enfuser_pm25_two_times.ipynb
+            text: "ENFUSER PM₂.₅ extraction"
+          - href: notebooks/00_stage_fmi_station_pm25_prepare.ipynb
+            text: "FMI station preparation"
+
+      - section: "Development & sensitivity"
+        contents:
+          - href: notebooks/README_v2_comparison.md
+            text: "Version comparison"
+          - href: notebooks/05_locomizer_two_time_pm25_change_v2.ipynb
+            text: "05 Earlier two-time analysis"
+          - href: notebooks/06_h3_behavioural_response_to_pm25.ipynb
+            text: "06 Initial behavioural response"
+          - href: notebooks/06_h3_behavioural_response_to_pm25_h3res9.ipynb
+            text: "06 H3 resolution 9"
+          - href: notebooks/06_h3_behavioural_response_to_pm25__h3res10.ipynb
+            text: "06 H3 resolution 10"
+          - href: notebooks/06_h3_behavioural_response_to_pm25_v3_hexmaps_fixed.ipynb
+            text: "06 Hex-map revision"
+
+      - section: "Version 1 — initial proof of concept"
+        contents:
+          - href: notebooks/01_residential_pm25_exposure.ipynb
+            text: "01 Residential exposure"
+          - href: notebooks/02_mobility_weighted_destination_exposure.ipynb
+            text: "02 Mobility-weighted exposure"
+          - href: notebooks/03_candidate_walking_route_pm25_exposure.ipynb
+            text: "03 Walking-route exposure"
+          - href: notebooks/04_cycling_exposure_to_otaniemi.ipynb
+            text: "04 Cycling to Otaniemi"
 
 format:
   html:
