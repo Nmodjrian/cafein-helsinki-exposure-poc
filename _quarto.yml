@@ -29,10 +29,10 @@ project:
     - notebooks/README_v2_comparison.md
 
     # Original v1 pages — preserve existing URLs
-    - notebooks/01_residential_pm25_exposure.ipynb
-    - notebooks/02_mobility_weighted_destination_exposure.ipynb
-    - notebooks/03_candidate_walking_route_pm25_exposure.ipynb
-    - notebooks/04_cycling_exposure_to_otaniemi.ipynb
+    - notebooks/v1/01_residential_pm25_exposure.ipynb
+    - notebooks/v1/02_mobility_weighted_destination_exposure.ipynb
+    - notebooks/v1/03_candidate_walking_route_pm25_exposure.ipynb
+    - notebooks/v1/04_cycling_exposure_to_otaniemi.ipynb
 
 website:
   title: "Helsinki Mobility & PM₂.₅ Exposure"
@@ -99,13 +99,13 @@ website:
 
       - section: "Version 1 — initial proof of concept"
         contents:
-          - href: notebooks/01_residential_pm25_exposure.ipynb
+          - href: notebooks/v1/01_residential_pm25_exposure.ipynb
             text: "01 Residential exposure"
-          - href: notebooks/02_mobility_weighted_destination_exposure.ipynb
+          - href: notebooks/v1/02_mobility_weighted_destination_exposure.ipynb
             text: "02 Mobility-weighted exposure"
-          - href: notebooks/03_candidate_walking_route_pm25_exposure.ipynb
+          - href: notebooks/v1/03_candidate_walking_route_pm25_exposure.ipynb
             text: "03 Walking-route exposure"
-          - href: notebooks/04_cycling_exposure_to_otaniemi.ipynb
+          - href: notebooks/v1/04_cycling_exposure_to_otaniemi.ipynb
             text: "04 Cycling to Otaniemi"
 
 format:
